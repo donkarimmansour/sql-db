@@ -2,7 +2,7 @@
 // const BASE_URL = 'http://localhost:3000';                
 
 // for ==> online / live server at vercel 
-const BASE_URL = 'http://localhost:3000';     
+const BASE_URL = 'https://sql-db.vercel.app';     
 
 
 
