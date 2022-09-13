@@ -1,0 +1,40 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+*>* {
+  font-family: 'Poppins', sans-serif;
+}
+
+.radioStyle {
+  @apply appearance-none rounded-full h-4 w-4 border border-gray-300 bg-white focus:outline-none transition duration-100 mt-1 align-top bg-no-repeat bg-center bg-contain float-left mr-2 cursor-pointer;
+}
+
+
+/* Custom Spinner  */
+.loader {
+  @apply border-gray-200 rounded-full border-4 ease-linear h-12 w-12;
+  border-top-color: #e42626;
+  animation       : spinner 1.2s linear infinite;
+}
+
+@keyframes spinner {
+  0% {
+      transform: rotate(0deg);
+  }
+
+  100% {
+      transform: rotate(360deg);
+  }
+}
+
+
+div[data-placement="bottom"] {
+    position: absolute;
+    /* inset: 0px auto auto 0px;
+    margin: 0px;
+    transform: translate(5px, 72px); */
+}
