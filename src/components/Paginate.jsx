@@ -25,8 +25,8 @@ export default function Paginate({pageCurrent , setpageCurrent}) {
       setLtotal(total)
     }else{
        setpageCount(0);
-       setLtotal(0)
-    }
+       setLtotal(0) 
+    } 
       
   }, [total]);
 

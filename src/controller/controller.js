@@ -93,7 +93,7 @@ export async function getCount(req, res ,  key , query , by) {
 
         } else if (by === "group") {
             if (key === "MOBILE" || key === "FBID") {
-                const queries = query.split(",")
+                const queries = query.split(",") 
                 users = await Users.count({ [key]: { $in: queries } })
             } else {
                 const queries = query.split(",").join("|")
