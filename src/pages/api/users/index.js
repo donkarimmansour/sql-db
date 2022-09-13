@@ -5,7 +5,7 @@ import connectMongo from "../../../data/dbConnection";
 // this function handle ==> routing + call controller  
 export default async function handler(req, res) {
 
-    const BASE_URL = 'http://localhost:3000';     
+    const BASE_URL = 'https://sql-db.vercel.app';     
 
     // MongoDB connection + Error Handel
     connectMongo().catch(() =>
